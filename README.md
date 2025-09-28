@@ -148,3 +148,212 @@
   </table>
 </body>
 </html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+    form {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #aaa;
+    }
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+    }
+    .form-group {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    .form-group label {
+      width: 150px;
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      flex: 1;
+      padding: 6px;
+    }
+    .radio-group,
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    textarea {
+      height: 100px;
+    }
+    .actions {
+      text-align: right;
+    }
+    .actions button {
+      padding: 6px 12px;
+      margin-left: 5px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-submit {
+      background: #007bff;
+      color: #fff;
+    }
+    .btn-cancel {
+      background: #aaa;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <!-- Basic Info -->
+    <fieldset>
+      <legend>Basic Info</legend>
+      <div class="form-group">
+        <label>Employee ID</label>
+        <input type="text" value="9">
+      </div>
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" value="Dodsworth">
+      </div>
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text" value="Anne">
+      </div>
+      <div class="form-group">
+        <label>Gender</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender"> Male</label>
+          <label><input type="radio" name="gender" checked> Female</label>
+          <label><input type="radio" name="gender"> XXX</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Title</label>
+        <input type="text" value="Sales Representative">
+      </div>
+      <div class="form-group">
+        <label>Suffix</label>
+        <input type="text" value="Ms.">
+      </div>
+      <div class="form-group">
+        <label>BirthDate</label>
+        <input type="datetime-local" value="1969-07-02T00:00">
+      </div>
+      <div class="form-group">
+        <label>HireDate</label>
+        <input type="datetime-local" value="1994-11-15T00:00">
+      </div>
+      <div class="form-group">
+        <label>SSN #</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Reports To</label>
+        <select>
+          <option>Buchanan</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <!-- Contact Info -->
+    <fieldset>
+      <legend>Contact Info</legend>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label>Address</label>
+        <input type="text" value="7 Houndstooth Rd.">
+      </div>
+      <div class="form-group">
+        <label>City</label>
+        <input type="text" value="London">
+      </div>
+      <div class="form-group">
+        <label>Region</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Postal Code</label>
+        <input type="text" value="WG2 7LT">
+      </div>
+      <div class="form-group">
+        <label>Country</label>
+        <select>
+          <option>Russian Federation</option>
+          <option>United Kingdom</option>
+          <option>USA</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>US Phone</label>
+        <input type="tel" value="(234)234-2342">
+      </div>
+      <div class="form-group">
+        <label>Photo</label>
+        <input type="text" value="EmplD9.bmp">
+      </div>
+    </fieldset>
+
+    <!-- Optional Info -->
+    <fieldset>
+      <legend>Optional Info</legend>
+      <div class="form-group">
+        <label>Notes</label>
+        <textarea>Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German.</textarea>
+      </div>
+      <div class="form-group">
+        <label>Preferred Shift</label>
+        <div class="radio-group">
+          <label><input type="radio" name="shift"> Regular</label>
+          <label><input type="radio" name="shift" checked> Gravy Yard</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Active?</label>
+        <div class="checkbox-group">
+          <input type="checkbox" checked>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Are you human?</label>
+        <input type="text" value="TIDAWO">
+      </div>
+    </fieldset>
+
+    <!-- Buttons -->
+    <div class="actions">
+      <button type="submit" class="btn-submit">Submit</button>
+      <button type="reset" class="btn-cancel">Cancel</button>
+    </div>
+  </form>
+
+</body>
+</html>
