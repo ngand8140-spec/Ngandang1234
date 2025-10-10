@@ -357,3 +357,96 @@ She is fluent in French and German.</textarea>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bài tập 2: dàn trang 
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục Flexbox</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            font-family: sans-serif;
+        }
+
+        .row {
+            display: flex;
+            align-items: flex-end;
+            gap: 12px;
+        }
+
+        .block {
+            background: #666;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+
+        .h-20 {
+            height: 20vh;
+            width: 20vh;
+        }
+
+
+        .h-30 {
+            height: 30vh;
+            width: 12vh;
+        }
+
+
+        .h-15 {
+            height: 15vh;
+            width: 17vh;
+        }
+
+
+        .h-35 {
+            height: 35vh;
+            width: 18vh;
+        }
+
+
+        .h-50 {
+            height: 50vh;
+            width: 20vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="block h-20">20vh</div>
+        <div class="block h-30">30vh</div>
+        <div class="block h-15">15vh</div>
+        <div class="block h-35">35vh</div>
+        <div class="block h-50">50vh</div>
+        <div class="block h-20">20vh</div> <!-- khối 20 cuối cùng bằng khối 20 đầu -->
+    </div>
+</body>
+
+</html>
